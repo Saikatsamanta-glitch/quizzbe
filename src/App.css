@@ -1,0 +1,15 @@
+.active-link{
+        text-decoration: none;
+        margin: 4px;
+        color: red;
+}
+.notactive-live{
+        text-decoration: none;
+        margin: 4px;
+        color: white;
+}
+.dflex{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+}
