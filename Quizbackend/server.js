@@ -1,11 +1,9 @@
-// how to create server
-// http | express framework
-// es6 <--- 
 const express  = require('express');
-// function ---> return
 const app = express();
+require('dotenv').config();
 require('./database/conn');
 const quiz_Data = require('./database/quizModel');
+const port = 5000 || process.env.PORT;
 
 
 // route / get
@@ -14,6 +12,6 @@ app.get('/',async(req,res)=>{
         res.json(responses)
 })
 
-app.listen( 5000 , ()=>{
-        console.log("Connected to port 5000 🔥");
+app.listen( port , ()=>{
+        console.log(`Connected to port ${port} 🔥`);
 } )
